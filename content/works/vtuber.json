@@ -3,7 +3,7 @@
 	"description": "Página demostrativa ficticia para VTuber Emikukis",
 	"date": "2022-10-11",
 	"link": "https://stirring-rolypoly-8b7043.netlify.app",
-	"img": "/images/demo/vtuber.png",
+	"img": "/images/works/vtuber.png",
 	"stack": [
 		"logos:svelte-icon",
 		"logos:typescript-icon"

@@ -2,7 +2,7 @@
 	"title": "JSON-Form",
 	"description": "Aplicación para generar formularios (vistas) a partir de archivos JSON esquematizados",
 	"date": "current",
-	"img": "/images/demo/json-form.png",
+	"img": "/images/works/json-form.png",
 	"stack": [
 		"logos:typescript-icon",
 		"logos:nuxt-icon",

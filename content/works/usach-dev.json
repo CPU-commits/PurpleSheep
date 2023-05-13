@@ -2,7 +2,7 @@
 	"title": "USACH.dev",
 	"description": "Red de repositorios para compartir material estudiantil de la USACH",
 	"date": "current",
-	"img": "/images/demo/usach-dev.png",
+	"img": "/images/works/usach-dev.png",
 	"stack": [
 		"logos:nuxt-icon",
 		"logos:typescript-icon",

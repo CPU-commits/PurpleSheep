@@ -3,7 +3,7 @@
 	"description": "Landing Page Smareng Group",
 	"date": "2023-04-05",
 	"link": "https://smareng.com/",
-	"img": "/images/demo/smareng.png",
+	"img": "/images/works/smareng.png",
 	"stack": [
 		"logos:svelte-icon",
 		"logos:redis",

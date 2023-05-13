@@ -3,7 +3,7 @@
 	"description": "Página para hacer uso de tecnologías IoT como Broker MQTT, Arduino, WebSockets, etc...",
 	"date": "2023-05-10",
 	"link": "https://iot.purple-sheep.com/",
-	"img": "/images/demo/iot.png",
+	"img": "/images/works/iot.png",
 	"stack": [
 		"logos:arduino",
 		"logos:svelte-icon",

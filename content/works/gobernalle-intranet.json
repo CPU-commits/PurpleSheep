@@ -3,7 +3,7 @@
 	"description": "Intranet de uso institutivo educacional con todas las aplicaciones necesarias listas para llegar y usar",
 	"date": "current",
 	"link": "https://test.gobernalle.com",
-	"img": "/images/demo/gobernalle-intranet.png",
+	"img": "/images/works/gobernalle-intranet.png",
 	"stack": [
 		"logos:nuxt-icon",
 		"logos:redis",
