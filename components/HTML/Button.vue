@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
-	type: 'submit' | 'text'
+	type: 'submit' | 'text' | 'reset' | undefined
 }>()
 </script>
 
