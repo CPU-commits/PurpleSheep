@@ -18,7 +18,7 @@ defineProps<{
 		</header>
 		<figure>
 			<NuxtLink :to="work.link" target="_blank">
-				<NuxtImg v-if="work.img" :src="work.img" :alt="work.title" />
+				<img v-if="work.img" :src="work.img" :alt="work.title" />
 			</NuxtLink>
 		</figure>
 		<footer class="PortfolioCard__footer">
