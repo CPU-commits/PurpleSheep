@@ -1,0 +1,14 @@
+{
+	"title": "VTuber Emikukis Demo",
+	"description": "Página demostrativa ficticia para VTuber Emikukis",
+	"date": "2022-10-11",
+	"link": "https://stirring-rolypoly-8b7043.netlify.app",
+	"img": "/images/demo/vtuber.png",
+	"stack": [
+		"logos:svelte-icon",
+		"logos:typescript-icon"
+	],
+	"repos": [
+		"https://github.com/CPU-commits/emikukis_client"
+	]
+}

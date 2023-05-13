@@ -1,0 +1,17 @@
+{
+	"title": "PurpleSheep - Blog",
+	"description": "Blog personal para escritura casual sobre tecnología y la vida misma",
+	"date": "2023-03-25",
+	"link": "https://blog.purple-sheep.com/",
+	"img": "/images/demo/blog.png",
+	"stack": [
+		"logos:deno",
+		"logos:fresh",
+		"logos:preact",
+		"logos:markdown",
+		"logos:typescript-icon"
+	],
+	"repos": [
+		"https://github.com/CPU-commits/PurpleSheep_Blog"
+	]
+}

@@ -1,0 +1,15 @@
+:root {
+    --color-main: #501d92;
+    --color-light: #eaeaea;
+    --color-dark: #111827;
+    --color-code: #111418;
+    --color-comment: #43474d;
+    --color-bg: white;
+    /* Toast */
+    --color-danger: #c9334b;
+    --color-info: #1dc2e0;
+    --color-success: var(--color-main);
+
+    --font-text: 'Ubuntu Mono', monospace;
+    --font-title: 'Inter', sans-serif;
+}

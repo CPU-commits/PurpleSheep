@@ -1,0 +1,33 @@
+{
+	"title": "Gobernalle - Gobernalle Intranet",
+	"description": "Intranet de uso institutivo educacional con todas las aplicaciones necesarias listas para llegar y usar",
+	"date": "current",
+	"link": "https://test.gobernalle.com",
+	"img": "/images/demo/gobernalle-intranet.png",
+	"stack": [
+		"logos:nuxt-icon",
+		"logos:redis",
+		"logos:kubernetes",
+		"logos:nestjs",
+		"logos:mongodb-icon",
+		"logos:gopher",
+		"logos:python",
+		"logos:elasticsearch",
+		"logos:typescript-icon",
+		"logos:prometheus",
+		"logos:sass",
+		"logos:docker-icon"
+	],
+	"repos": [
+		"https://github.com/CPU-commits/Intranet_BMain",
+		"https://github.com/CPU-commits/Intranet_Client",
+		"https://github.com/CPU-commits/Intranet_BClassroom",
+		"https://github.com/CPU-commits/Intranet_BNotifications",
+		"https://github.com/CPU-commits/Intranet_BNews",
+		"https://github.com/CPU-commits/Intranet_BLibrary",
+		"https://github.com/CPU-commits/Intranet_BFiles",
+		"https://github.com/CPU-commits/Intranet_BAnnoucements",
+		"https://github.com/CPU-commits/Intranet_BJobs",
+		"https://github.com/CPU-commits/Intranet_BCORS"
+	]
+}

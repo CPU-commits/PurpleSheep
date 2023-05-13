@@ -1,0 +1,26 @@
+{
+	"title": "PurpleSheep - IoT",
+	"description": "Página para hacer uso de tecnologías IoT como Broker MQTT, Arduino, WebSockets, etc...",
+	"date": "2023-05-10",
+	"link": "https://iot.purple-sheep.com/",
+	"img": "/images/demo/iot.png",
+	"stack": [
+		"logos:arduino",
+		"logos:svelte-icon",
+		"logos:gopher",
+		"logos:socket-io",
+		"logos:deno",
+		"logos:nodejs-icon",
+		"logos:typescript-icon",
+		"logos:nestjs",
+		"logos:mongodb-icon",
+		"logos:docker-icon",
+		"logos:sass"
+	],
+	"repos": [
+		"https://github.com/CPU-commits/Broker-MQTT",
+		"https://github.com/CPU-commits/NestJS-MQTT-Client",
+		"https://github.com/CPU-commits/AgentMQTT-Garden",
+		"https://github.com/CPU-commits/PurpleSheep_Tasks"
+	]
+}

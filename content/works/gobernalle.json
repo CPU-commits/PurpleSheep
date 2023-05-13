@@ -1,0 +1,20 @@
+{
+	"title": "Gobernalle",
+	"description": "Gobernalle es una plataforma que permite desplegar a las instituciones de enseñanza básica y media una intranet con todas las aplicaciones necesarias listas para llegar y usar",
+	"date": "current",
+	"link": "https://roaring-narwhal-fe12f6.netlify.app/",
+	"img": "/images/demo/gobernalle.png",
+	"stack": [
+		"logos:svelte-icon",
+		"logos:redis",
+		"logos:kubernetes",
+		"logos:nestjs",
+		"logos:mongodb-icon",
+		"logos:jenkins",
+		"logos:sass",
+		"logos:typescript-icon",
+		"logos:terraform-icon",
+		"logos:docker-icon"
+	],
+	"repos": []
+}
