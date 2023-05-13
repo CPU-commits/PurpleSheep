@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import 'animate.css'
 
+useServerSeoMeta({
+	title: 'PurpleSheep - Felipe Cárdenas',
+})
 // Typewritter
 const printFunctions = [
 	'print',
@@ -223,7 +226,7 @@ async function sendMessage() {
 			</span>
 		</section>
 
-		<section class="Form">
+		<section id="contact" class="Form">
 			<HTMLForm :action="sendMessage">
 				<h3>Formulario de contacto</h3>
 				<HTMLInput v-model:value="contact.email" placeholder="Email" />
@@ -258,6 +261,7 @@ async function sendMessage() {
 h1 {
 	font-size: 5rem;
 	font-weight: 800;
+	padding: 8px;
 	text-align: center;
 	color: var(--color-main);
 }
@@ -356,11 +360,68 @@ a {
 	color: white;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .Form {
 	padding: 20px;
 	display: flex;
 	justify-content: center;
+}
+
+// Media queries
+@media (max-width: 767.98px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	.Banner {
+		header {
+			margin: 0;
+			margin-bottom: 25px;
+			grid-template-columns: 80px 200px 1fr 1fr;
+		}
+		.Banner_text h2 {
+			font-size: 1.5rem;
+		}
+		.Banner__main {
+			h2 {
+				font-size: 1.3rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+		.Code {
+			span {
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.Banner {
+		header {
+			grid-template-columns: 30px 290px 0fr 0fr;
+		}
+		.Banner__main {
+			h2 {
+				visibility: hidden;
+			}
+			p {
+				visibility: hidden;
+			}
+		}
+		.Code {
+			span {
+				font-size: 0.9rem;
+			}
+		}
+	}
 }
 </style>

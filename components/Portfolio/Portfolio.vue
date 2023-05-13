@@ -39,4 +39,28 @@ const { data: works } = await useAsyncData('works', () =>
 		align-items: center;
 	}
 }
+
+// Media queries
+@media (max-width: 767.98px) {
+	.Portfolio {
+		grid-template-columns: 50px 1fr;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.Portfolio {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		.Portfolio__column {
+			h2 {
+				text-align: center;
+				font-size: 1.4rem;
+				writing-mode: initial;
+				text-orientation: initial;
+			}
+		}
+	}
+}
 </style>

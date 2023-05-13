@@ -57,4 +57,41 @@ svg {
 		width: 20px;
 	}
 }
+
+// Media queries
+@media (max-width: 767.98px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	svg {
+		height: 20px;
+		width: 20px;
+	}
+
+	.Header__media {
+		svg {
+			height: 15px;
+			width: 15px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	svg {
+		height: 18px;
+		width: 18px;
+	}
+
+	.Header__media {
+		svg {
+			height: 15px;
+			width: 15px;
+		}
+	}
+}
 </style>

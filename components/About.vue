@@ -92,4 +92,65 @@
 		}
 	}
 }
+
+// Media queries
+@media (max-width: 767.98px) {
+	.AboutMe {
+		.AboutMe__header {
+			img {
+				height: 70px;
+				width: 70px;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+		article {
+			padding: 10px;
+			p,
+			i {
+				font-size: 0.9rem;
+			}
+		}
+		footer {
+			span {
+				font-size: 0.9rem;
+			}
+			svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.AboutMe {
+		.AboutMe__header {
+			img {
+				height: 60px;
+				width: 60px;
+			}
+			p {
+				font-size: 0.8rem;
+			}
+		}
+		article {
+			padding: 10px;
+			p,
+			i {
+				font-size: 0.8rem;
+			}
+		}
+		footer {
+			span {
+				font-size: 0.8rem;
+			}
+			svg {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
 </style>

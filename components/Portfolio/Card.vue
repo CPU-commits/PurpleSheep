@@ -49,6 +49,7 @@ defineProps<{
 	padding: 20px;
 	position: relative;
 	gap: 10px;
+	margin-bottom: 25px;
 	border-radius: 8px;
 }
 
@@ -99,7 +100,7 @@ img {
 .PortfolioCard__footer {
 	background-color: white;
 	position: absolute;
-	bottom: 0px;
+	bottom: -20px;
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -110,6 +111,37 @@ img {
 	border-radius: 0 0 6px;
 	a {
 		width: fit-content;
+	}
+}
+
+// Media queries
+@media (max-width: 767.98px) {
+	.PortfolioCard__header {
+		p {
+			font-size: 0.9rem;
+		}
+		footer {
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.PortfolioCard {
+		flex-direction: column;
+	}
+
+	.PortfolioCard__header {
+		p {
+			font-size: 0.85rem;
+		}
+	}
+
+	.PortfolioCard__header footer {
+		justify-content: center;
 	}
 }
 </style>

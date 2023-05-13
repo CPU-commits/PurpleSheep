@@ -103,4 +103,40 @@ img:hover {
 		width: 250px;
 	}
 }
+
+// Media queries
+@media (max-width: 767.98px) {
+	$animationSpeed: 30s;
+
+	.slider {
+		.slide {
+			width: 150px;
+			height: 80px;
+		}
+
+		margin-bottom: 5px;
+	}
+
+	img {
+		width: 100px;
+		height: 50px;
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-150px * 7));
+		}
+	}
+	@keyframes scrollright {
+		0% {
+			transform: translateX(calc(-150px * 7));
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+}
 </style>
