@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Header />
+		<!--<Header />-->
 		<main>
 			<div class="Container">
 				<slot />
@@ -21,6 +21,5 @@ main {
 .Container {
 	position: relative;
 	width: 100%;
-	max-width: 1100px;
 }
 </style>

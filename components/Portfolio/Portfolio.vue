@@ -2,16 +2,33 @@
 const { data: works } = await useAsyncData('works', () =>
 	queryContent().where({ _dir: 'works' }).find(),
 )
+
+function calculateRow(c: number) {
+	if (c % 5 === 0) {
+		return 3 * Math.floor(c / 5)
+	} else if (c % 5 <= 2) {
+		return 3 * Math.floor(c / 5) + 1
+	} else {
+		return 3 * Math.floor(c / 5) + 2
+	}
+}
 </script>
 
 <template>
 	<section class="Portfolio">
-		<div class="Portfolio__column">
-			<h2>PORTAFOLIO</h2>
-		</div>
-		<div class="Portfolio__cards">
-			<PortfolioCard v-for="work in works" :key="work._id" :work="work" />
-		</div>
+		<PortfolioCard
+			v-for="(work, i) in works"
+			:key="work._id"
+			:work="work"
+			:class="{
+				a: (i + 5) % 5 === 0,
+				b: (i + 4) % 5 === 0,
+				c: (i + 3) % 5 === 0,
+				d: (i + 2) % 5 === 0,
+				e: (i + 1) % 5 === 0,
+			}"
+			:style="{ 'grid-row': calculateRow(i + 1) }"
+		/>
 	</section>
 </template>
 
@@ -20,47 +37,37 @@ const { data: works } = await useAsyncData('works', () =>
 	padding: 30px;
 	display: grid;
 	align-items: center;
-	grid-template-columns: 100px 1fr;
-	.Portfolio__column {
-		h2 {
-			text-align: center;
-			padding: 3px;
-			font-size: 1.4rem;
-			writing-mode: vertical-rl;
-			text-orientation: upright;
-		}
-	}
-	.Portfolio__cards {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
+	max-width: 1000px;
+	gap: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.a {
+	grid-column: 1/3;
+}
+
+.b {
+	grid-column: 3/5;
+}
+
+.c {
+	grid-column: 1/2;
+}
+
+.d {
+	grid-column: 2/5;
+}
+
+.e {
+	grid-column: 1/5;
 }
 
 // Media queries
 @media (max-width: 767.98px) {
 	.Portfolio {
-		grid-template-columns: 50px 1fr;
 		padding: 20px;
-	}
-}
-
-@media (max-width: 575.98px) {
-	.Portfolio {
-		display: flex;
-		flex-direction: column;
-		padding: 10px;
-		.Portfolio__column {
-			h2 {
-				text-align: center;
-				font-size: 1.4rem;
-				writing-mode: initial;
-				text-orientation: initial;
-			}
-		}
 	}
 }
 </style>

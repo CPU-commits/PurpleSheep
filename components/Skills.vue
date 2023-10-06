@@ -56,13 +56,14 @@ $animationSpeed: 40s;
 
 img {
 	object-fit: contain;
-	filter: grayscale(1);
+	filter: grayscale(1) contrast(0.1);
 	opacity: 0.25;
-	transition: all 0.3s;
+	transition: all 0.5s;
 }
 
 img:hover {
 	opacity: 1;
+	filter: contrast(1);
 }
 
 // Styling

@@ -151,65 +151,75 @@ async function sendMessage() {
 </script>
 
 <template>
-	<div>
-		<section class="Banner">
-			<h1 class="animate__animated animate__fadeInDown">
-				Solo se necesita un pequeño empujon
-			</h1>
+	<main>
+		<div class="First">
 			<header>
-				<aside class="Code">
-					<Code>
-						<div>
-							<span class="Comment">
-								1 // C&oacute;digo para saludar
-							</span>
-						</div>
-						<div>
-							<span class="Comment">2 </span>
-							<Typewritter
-								class="Function"
-								:type-array="printFunctions"
-							/>
-							<span class="Function Machine" />
-							<span class="Function">(</span>
-							<span class="Colon">"Hola mundo!"</span>
-							<span class="Function">)</span>
-						</div>
-						<div>
-							<span class="Comment">
-								3 // C&oacute;digo para contactarme
-							</span>
-						</div>
-						<div>
-							<span class="Comment">4</span>
-							<span class="Function">
-								<NuxtLink to="#contact">
-									hacer_real_tu_vision()
-								</NuxtLink>
-							</span>
-						</div>
-						<div>
-							<span class="Comment">5</span>
-						</div>
-					</Code>
-				</aside>
-				<article class="Banner_text">
-					<h2>Sheep...</h2>
-				</article>
-				<article class="Banner__main">
-					<h2>
-						Momento de pasar la oveja negra a la oveja
-						<span class="Purple">morada</span>
-					</h2>
-					<p>
-						Sitio para obedecer a tus problemas y entender que
-						necesitas como producto
-					</p>
-				</article>
-				<article class="Banner_description" />
+				<h2>
+					<span class="Italic">PURPLE</span>
+					/
+					<span class="Purple">SHEEP</span>
+				</h2>
+				<h3>
+					Momento de pasar la oveja negra a la oveja
+					<span class="Purple">morada</span>
+				</h3>
 			</header>
-		</section>
+			<Grid />
+			<section class="Banner">
+				<header>
+					<aside class="Code">
+						<Code>
+							<div>
+								<span class="Comment">
+									1 // C&oacute;digo para saludar
+								</span>
+							</div>
+							<div>
+								<span class="Comment">2 </span>
+								<Typewritter
+									class="Function"
+									:type-array="printFunctions"
+								/>
+								<span class="Function Machine" />
+								<span class="Function">(</span>
+								<span class="Colon">"Hola mundo!"</span>
+								<span class="Function">)</span>
+							</div>
+							<div>
+								<span class="Comment">
+									3 // C&oacute;digo para contactarme
+								</span>
+							</div>
+							<div>
+								<span class="Comment">4</span>
+								<span class="Function">
+									<NuxtLink to="#contact">
+										hacer_real_tu_vision()
+									</NuxtLink>
+								</span>
+							</div>
+							<div>
+								<span class="Comment">5</span>
+							</div>
+						</Code>
+					</aside>
+					<article class="Banner_text">
+						<h2>Sheep...</h2>
+					</article>
+					<article class="Banner__main">
+						<h3>
+							Software a la medida, altamente creativo y
+							resolutivo a tus problemas. Convierte una idea, en
+							una idea
+							<span class="Purple">morada...</span>
+						</h3>
+					</article>
+					<article class="Banner_description" />
+				</header>
+			</section>
+		</div>
 
+		<br />
 		<section class="Skills">
 			<Skills :slides="leftSlides" direction="right" />
 			<Skills :slides="rightSlides" />
@@ -217,7 +227,9 @@ async function sendMessage() {
 
 		<About />
 
-		<Portfolio />
+		<section class="Portfolio__container">
+			<Portfolio />
+		</section>
 
 		<section class="Flag">
 			<span>
@@ -241,10 +253,43 @@ async function sendMessage() {
 				</small>
 			</HTMLForm>
 		</section>
-	</div>
+	</main>
 </template>
 
 <style scoped lang="scss">
+.First {
+	background-color: var(--color-code);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100vh;
+	margin: 0px auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	header {
+		position: absolute;
+		top: 10%;
+		display: flex;
+		flex-direction: column;
+		left: 10%;
+		z-index: 9;
+	}
+	h2 {
+		text-align: left;
+		font-size: 3rem;
+		color: white;
+	}
+	.Italic {
+		color: white;
+		font-size: 3.5rem;
+		font-style: italic;
+	}
+	h3 {
+		color: white;
+		font-size: 1.5rem;
+	}
+}
+
 .Banner header {
 	display: grid;
 	grid-template-columns: 200px 200px 1fr 1fr;
@@ -270,6 +315,12 @@ h2 {
 	text-align: center;
 }
 
+.Banner {
+	position: absolute;
+	width: 100%;
+	bottom: 300px;
+}
+
 .Banner_text {
 	grid-area: maintitle;
 	border: 2px solid var(--color-light);
@@ -281,6 +332,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--color-code);
 	justify-content: center;
 }
 
@@ -296,11 +348,16 @@ h2 {
 	border-top-left-radius: 0;
 	border-bottom-right-radius: 0;
 	grid-area: main;
+	max-width: 500px;
+	background-color: var(--color-code);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
 	flex-direction: column;
+	h3 {
+		font-size: 1.1rem;
+	}
 }
 
 .Banner__main p {
@@ -313,6 +370,7 @@ h2 {
 	border-radius: 8px;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
+	background-color: var(--color-code);
 	grid-area: maintext;
 }
 
@@ -333,6 +391,8 @@ a {
 
 .Code {
 	grid-area: code;
+	border: 1px solid var(--color-main);
+	border-radius: 8px;
 }
 
 .Comment {
@@ -351,6 +411,11 @@ a {
 	color: #00a86b;
 }
 
+.Portfolio__container {
+	display: flex;
+	justify-content: center;
+}
+
 .Flag {
 	background-color: var(--color-code);
 	padding: 20px;
@@ -367,6 +432,9 @@ a {
 	padding: 20px;
 	display: flex;
 	justify-content: center;
+	h3 {
+		color: white;
+	}
 }
 
 // Media queries
@@ -410,7 +478,7 @@ a {
 			grid-template-columns: 30px 290px 0fr 0fr;
 		}
 		.Banner__main {
-			h2 {
+			h3 {
 				visibility: hidden;
 			}
 			p {

@@ -5,21 +5,22 @@
 			<div>
 				<h3>Sobre m&iacute;</h3>
 				<p>Me llamo Felipe C&aacute;rdenas</p>
-				<p>Desarrollador web full stack [Trabajando]</p>
+				<p>Desarrollador web full stack</p>
 				<p>Estudiante de ingenier&iacute;a en inform&aacute;tica</p>
 			</div>
 		</header>
 		<article>
-			<p>Me encargo de obtener un diseño &uacute;nico y simple</p>
+			<p>Diseño &uacute;nico y simple</p>
 			<p>
-				Mis principales experiencias son en desarrollo de software para
-				aplicaciones distribuidas, arquitectura de software y CI/CD
+				Desarrollo de software para aplicaciones distribuidas,
+				arquitectura de software y CI/CD
 			</p>
 			<i>
 				Una aplicaci&oacute;n de ensueño no tiene por qu&eacute; ser un
 				sueño
 			</i>
 		</article>
+		<!--
 		<footer class="AboutMe__footer">
 			<div class="AboutMe__footer--card">
 				<Icon name="eos-icons:patterns" />
@@ -34,6 +35,7 @@
 				<span>Atractivo</span>
 			</div>
 		</footer>
+		-->
 	</section>
 </template>
 
@@ -58,6 +60,10 @@
 	}
 	h3 {
 		text-align: center;
+		color: white;
+	}
+	p {
+		color: white;
 	}
 	article {
 		padding: 20px;
@@ -66,11 +72,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		background: linear-gradient(
-			0deg,
-			var(--color-code) 0%,
-			var(--color-dark) 100%
-		);
 		p,
 		i {
 			color: white;
