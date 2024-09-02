@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 		strict: true,
 	},
 	css: ['@/assets/scss/main.scss'],
-	modules: ['@pinia/nuxt', '@nuxt/image-edge', 'nuxt-icon', '@nuxt/content'],
+	modules: ['@pinia/nuxt', '@nuxt/image-edge', 'nuxt-icon', '@nuxt/content', '@nuxt/eslint'],
 	imports: {
 		dirs: ['stores'],
 	},
@@ -43,4 +43,5 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	compatibilityDate: '2024-09-01',
 })

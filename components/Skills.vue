@@ -110,12 +110,11 @@ img:hover {
 	$animationSpeed: 30s;
 
 	.slider {
+		margin-bottom: 5px;
 		.slide {
 			width: 150px;
 			height: 80px;
 		}
-
-		margin-bottom: 5px;
 	}
 
 	img {

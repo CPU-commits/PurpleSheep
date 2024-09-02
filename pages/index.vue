@@ -30,31 +30,31 @@ onMounted(() => {
 // Slides
 const leftSlides = [
 	{
-		src: '/images/skills/python.png',
+		src: '/images/skills/python.svg',
 		alt: 'Python',
 	},
 	{
-		src: '/images/skills/node_js.png',
+		src: '/images/skills/node_js.svg',
 		alt: 'NodeJS',
 	},
 	{
-		src: '/images/skills/type_script.webp',
+		src: '/images/skills/typescript.svg',
 		alt: 'Typescript',
 	},
 	{
-		src: '/images/skills/golang.png',
+		src: '/images/skills/golang.svg',
 		alt: 'Golang',
 	},
 	{
-		src: '/images/skills/rust.png',
+		src: '/images/skills/rust.svg',
 		alt: 'Rust',
 	},
 	{
-		src: '/images/skills/mongo_db.png',
+		src: '/images/skills/mongo_db.svg',
 		alt: 'MongoDB',
 	},
 	{
-		src: '/images/skills/postgre.png',
+		src: '/images/skills/postgres.svg',
 		alt: 'PostgreSQL',
 	},
 	{
@@ -62,21 +62,21 @@ const leftSlides = [
 		alt: 'NestJS',
 	},
 	{
-		src: '/images/skills/docker.png',
+		src: '/images/skills/docker.svg',
 		alt: 'Docker',
 	},
 	{
-		src: '/images/skills/fastapi.png',
+		src: '/images/skills/fastapi.svg',
 		alt: 'FastAPI',
 	},
 	{
-		src: '/images/skills/svelte.png',
+		src: '/images/skills/svelte.svg',
 		alt: 'Svelte',
 	},
 ]
 const rightSlides = [
 	{
-		src: '/images/skills/vue.png',
+		src: '/images/skills/vue.svg',
 		alt: 'Vue 3',
 	},
 	{
@@ -84,7 +84,7 @@ const rightSlides = [
 		alt: 'Nuxt',
 	},
 	{
-		src: '/images/skills/kubernetes.png',
+		src: '/images/skills/kubernetes.svg',
 		alt: 'Kubernetes',
 	},
 	{
@@ -96,11 +96,11 @@ const rightSlides = [
 		alt: 'Deno',
 	},
 	{
-		src: '/images/skills/fresh.png',
+		src: '/images/skills/fresh.svg',
 		alt: 'Deno Fresh',
 	},
 	{
-		src: '/images/skills/java.png',
+		src: '/images/skills/java.svg',
 		alt: 'Java',
 	},
 	{
@@ -116,7 +116,7 @@ const rightSlides = [
 		alt: 'Couchdb',
 	},
 	{
-		src: '/images/skills/sqlite.png',
+		src: '/images/skills/sqlite.svg',
 		alt: 'SQLite 3',
 	},
 ]
