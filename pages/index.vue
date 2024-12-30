@@ -155,6 +155,7 @@ async function sendMessage() {
 		<div class="First">
 			<header>
 				<h2>
+					<img src="/logos/logo-white.svg" alt="Logo Purple Sheep" />
 					<span class="Italic">PURPLE</span>
 					/
 					<span class="Purple">SHEEP</span>
@@ -282,6 +283,9 @@ async function sendMessage() {
 		text-align: left;
 		font-size: 3rem;
 		color: white;
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 	.Italic {
 		color: white;
@@ -291,6 +295,9 @@ async function sendMessage() {
 	h3 {
 		color: white;
 		font-size: 1.5rem;
+	}
+	img {
+		width: 50px;
 	}
 }
 
