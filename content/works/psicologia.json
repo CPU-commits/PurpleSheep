@@ -1,0 +1,15 @@
+{
+	"title": "Psicología y Arte Intranet",
+	"description": "Intranet para clínica de Psicología Multidisiplinaria",
+	"date": "2024-12-30",
+	"img": "/images/works/psicologia.png",
+	"stack": [
+		"logos:nuxt-icon",
+		"logos:nestjs",
+		"logos:mongodb-icon",
+		"logos:typescript-icon",
+		"logos:sass",
+		"logos:docker-icon"
+	],
+	"repos": []
+}

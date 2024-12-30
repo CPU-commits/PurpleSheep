@@ -1,0 +1,15 @@
+{
+	"title": "Terraiuris",
+	"description": "Landing Page Terraiuris",
+	"date": "2024-11-01",
+	"link": "https://terraiuris.cl/",
+	"img": "/images/works/terraiuris.png",
+	"stack": [
+		"logos:nuxt-icon",
+		"logos:typescript-icon",
+		"logos:docker-icon",
+		"logos:sass",
+		"logos:astro-icon"
+	],
+	"repos": []
+}

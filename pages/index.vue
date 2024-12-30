@@ -230,6 +230,10 @@ async function sendMessage() {
 		<section class="Portfolio__container">
 			<Portfolio />
 		</section>
+		<div class="Portfolio__apps">
+			<h2 class="Purple">Y MUCHOS PROYECTOS M&Aacute;S...!</h2>
+			<Apps />
+		</div>
 
 		<section class="Flag">
 			<span>
@@ -416,6 +420,12 @@ a {
 	justify-content: center;
 }
 
+.Portfolio__apps {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .Flag {
 	background-color: var(--color-code);
 	padding: 20px;
@@ -432,6 +442,9 @@ a {
 	padding: 20px;
 	display: flex;
 	justify-content: center;
+	margin: 0;
+	background-image: radial-gradient(circle, black 1px, transparent 1px);
+	background-size: 10px 10px;
 	h3 {
 		color: white;
 	}

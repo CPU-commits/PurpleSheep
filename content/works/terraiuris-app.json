@@ -1,0 +1,16 @@
+{
+	"title": "Terraiuris Aplicación",
+	"description": "Aplicación para encontrar Match de abogados para casos medioambientales",
+	"date": "2024-12-01",
+	"img": "/images/works/terraiuris-app.png",
+	"stack": [
+		"logos:nuxt-icon",
+		"logos:redis",
+		"logos:nestjs",
+		"logos:mongodb-icon",
+		"logos:typescript-icon",
+		"logos:sass",
+		"logos:docker-icon"
+	],
+	"repos": []
+}

@@ -9,15 +9,17 @@
 
 <style scoped>
 footer {
-	margin-top: 100px;
-	width: 100%;
 	padding: 20px;
+	padding-top: 100px;
+	width: 100%;
 	box-sizing: border-box;
 	background-color: var(--color-code);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	background-image: radial-gradient(circle, black 1px, transparent 1px);
+	background-size: 10px 10px;
 }
 
 a {

@@ -1,0 +1,15 @@
+{
+	"title": "InnoVote Landing Page",
+	"description": "Landing Page para empresa de votación electrónica InnoVote",
+	"date": "2024-10-01",
+	"img": "/images/works/innovote-landing.png",
+	"stack": [
+		"logos:nuxt-icon",
+		"logos:typescript-icon",
+		"logos:docker-icon",
+		"logos:sass",
+		"logos:astro-icon"
+	],
+	"link": "https://innovote.cl",
+	"repos": []
+}
