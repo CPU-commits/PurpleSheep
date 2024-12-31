@@ -3,6 +3,7 @@ export default defineEventHandler(async (event) => {
 		to: string
 		text: string
 	}>(event)
+	console.log(body)
 	await sendMail(body.to, body.text)
 
 	return {

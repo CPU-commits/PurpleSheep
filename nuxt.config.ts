@@ -9,9 +9,6 @@ export default defineNuxtConfig({
 			NODE_ENV: 'dev' as 'dev' | 'prod',
 		},
 		mail: {
-			host: '',
-			port: 0,
-			user: '',
 			password: '',
 			sender: '',
 			to: '',
@@ -21,7 +18,13 @@ export default defineNuxtConfig({
 		strict: true,
 	},
 	css: ['@/assets/scss/main.scss'],
-	modules: ['@pinia/nuxt', '@nuxt/image-edge', 'nuxt-icon', '@nuxt/content', '@nuxt/eslint'],
+	modules: [
+		'@pinia/nuxt',
+		'@nuxt/image-edge',
+		'nuxt-icon',
+		'@nuxt/content',
+		'@nuxt/eslint',
+	],
 	imports: {
 		dirs: ['stores'],
 	},

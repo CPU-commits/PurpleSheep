@@ -232,7 +232,7 @@ async function sendMessage() {
 			<Portfolio />
 		</section>
 		<div class="Portfolio__apps">
-			<h2 class="Purple">Y MUCHOS PROYECTOS M&Aacute;S...!</h2>
+			<h2 class="Purple">¡Y MUCHOS PROYECTOS M&Aacute;S...!</h2>
 			<Apps />
 		</div>
 
@@ -252,7 +252,7 @@ async function sendMessage() {
 					placeholder="Mensaje"
 				/>
 				<HTMLButton type="submit">Env&iacute;ar</HTMLButton>
-				<small v-if="ok">
+				<small v-if="ok" class="OkMessage">
 					<Icon name="akar-icons:circle-check-fill" />
 					Se ha mandado el mensaje con exito
 				</small>
@@ -456,6 +456,11 @@ a {
 	h3 {
 		color: white;
 	}
+}
+
+.OkMessage,
+.OkMessage i {
+	color: white;
 }
 
 // Media queries

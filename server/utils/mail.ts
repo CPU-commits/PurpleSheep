@@ -1,25 +1,13 @@
-// eslint-disable-next-line import/default
-import nodemailer from 'nodemailer'
-
-const { mail } = useRuntimeConfig()
-// eslint-disable-next-line import/no-named-as-default-member
-const transporter = nodemailer.createTransport({
-	host: mail.host,
-	port: mail.port,
-	secure: mail.port === 587,
-	auth: {
-		user: mail.user,
-		pass: mail.password,
-	},
-})
+import { Resend } from 'resend'
 
 export async function sendMail(from: string, text: string) {
-	const info = await transporter.sendMail({
-		from: mail.sender,
-		to: mail.to,
+	const runtimeConfig = useRuntimeConfig()
+
+	const resend = new Resend(runtimeConfig.mail.password)
+	await resend.emails.send({
+		from: runtimeConfig.mail.sender,
+		to: runtimeConfig.mail.to,
 		subject: 'Mensaje PurpleSheep',
 		text: `${text} <${from}>`,
 	})
-
-	return info
 }
