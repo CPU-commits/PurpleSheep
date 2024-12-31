@@ -252,9 +252,8 @@ async function sendMessage() {
 					placeholder="Mensaje"
 				/>
 				<HTMLButton type="submit">Env&iacute;ar</HTMLButton>
-				<small v-if="ok" class="OkMessage">
-					<Icon name="akar-icons:circle-check-fill" />
-					Se ha mandado el mensaje con exito
+				<small v-if="!ok" class="OkMessage">
+					Se ha mandado el mensaje con exito. ¡Gracias por contactarte!
 				</small>
 			</HTMLForm>
 		</section>
@@ -458,9 +457,9 @@ a {
 	}
 }
 
-.OkMessage,
-.OkMessage i {
+.OkMessage {
 	color: white;
+	text-align: center;
 }
 
 // Media queries
