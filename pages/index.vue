@@ -252,7 +252,7 @@ async function sendMessage() {
 					placeholder="Mensaje"
 				/>
 				<HTMLButton type="submit">Env&iacute;ar</HTMLButton>
-				<small v-if="!ok" class="OkMessage">
+				<small v-if="ok" class="OkMessage">
 					Se ha mandado el mensaje con exito. ¡Gracias por contactarte!
 				</small>
 			</HTMLForm>
