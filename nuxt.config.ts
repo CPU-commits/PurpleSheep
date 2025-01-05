@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 		'nuxt-icon',
 		'@nuxt/content',
 		'@nuxt/eslint',
+		'nuxt-jsonld',
 	],
 	imports: {
 		dirs: ['stores'],

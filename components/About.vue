@@ -6,11 +6,12 @@
 				<h3>Sobre m&iacute;</h3>
 				<p>Me llamo Felipe C&aacute;rdenas</p>
 				<p>Desarrollador web full stack</p>
-				<p>Estudiante de ingenier&iacute;a en inform&aacute;tica</p>
+				<p>Inform&aacute;tico y empedernido por solucionar problemas</p>
 			</div>
 		</header>
 		<article>
 			<p>Diseño &uacute;nico y simple</p>
+			<p>Soluciones inform&aacute;ticas a problemas reales</p>
 			<p>
 				Desarrollo de software para aplicaciones distribuidas,
 				arquitectura de software y CI/CD

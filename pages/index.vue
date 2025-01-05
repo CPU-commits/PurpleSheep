@@ -3,6 +3,28 @@ import 'animate.css'
 
 useServerSeoMeta({
 	title: 'PurpleSheep - Felipe Cárdenas',
+	description:
+		'Transformamos ideas en software único y creativo. En PurpleSheep desarrollamos soluciones a medida para problemas reales. ¡Lleva tu proyecto al siguiente nivel con PurpleSheep!',
+	ogTitle: 'PurpleSheep - Felipe Cárdenas',
+	ogType: 'website',
+	ogUrl: 'https://purple-sheep.com',
+	ogImage: 'https://purple-sheep.com/logos/logo.png',
+	ogImageType: 'image/png',
+	ogImageWidth: '1500',
+	ogImageHeight: '1500',
+	ogImageAlt: 'Logo PurpleSheep',
+	author: 'Felipe Cárdenas',
+})
+useJsonld({
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	image: 'https://purple-sheep.com/logos/logo.png',
+	logo: 'https://purple-sheep.com/logos/logo.png',
+	url: 'https://purple-sheep.com',
+	sameAs: 'https://www.instagram.com/purple.sheep.web',
+	description:
+		'Transformamos ideas en software único y creativo. En PurpleSheep desarrollamos soluciones a medida para problemas reales. ¡Lleva tu proyecto al siguiente nivel con PurpleSheep!',
+	name: 'PurpleSheep',
 })
 // Typewritter
 const printFunctions = [
@@ -161,7 +183,7 @@ async function sendMessage() {
 					<span class="Purple">SHEEP</span>
 				</h2>
 				<h3>
-					Momento de pasar la oveja negra a la oveja
+					Es hora de transformar la oveja negra en la oveja
 					<span class="Purple">morada</span>
 				</h3>
 			</header>
@@ -253,7 +275,8 @@ async function sendMessage() {
 				/>
 				<HTMLButton type="submit">Env&iacute;ar</HTMLButton>
 				<small v-if="ok" class="OkMessage">
-					Se ha mandado el mensaje con exito. ¡Gracias por contactarte!
+					Se ha mandado el mensaje con exito. ¡Gracias por
+					contactarte!
 				</small>
 			</HTMLForm>
 		</section>
