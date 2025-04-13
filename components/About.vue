@@ -1,7 +1,7 @@
 <template>
 	<section class="AboutMe">
 		<header class="AboutMe__header">
-			<img src="/images/skills/deno.svg" alt="Deno" />
+			<img src="/images/me/avatar.jpeg" alt="Felipe Cárdenas" />
 			<div>
 				<h3>Sobre m&iacute;</h3>
 				<p>Me llamo Felipe C&aacute;rdenas</p>
@@ -10,16 +10,17 @@
 			</div>
 		</header>
 		<article>
+			<p>Trabajo en equipo</p>
 			<p>Diseño &uacute;nico y simple</p>
-			<p>Soluciones inform&aacute;ticas a problemas reales</p>
+			<p>Desarrollador con experiencia desde 2019</p>
 			<p>
 				Desarrollo de software para aplicaciones distribuidas,
 				arquitectura de software y CI/CD
 			</p>
-			<i>
-				Una aplicaci&oacute;n de ensueño no tiene por qu&eacute; ser un
-				sueño
-			</i>
+			<p>
+				C&oacute;digo limpio y bien estructurado a partir de las mejores
+				pr&aacute;cticas
+			</p>
 		</article>
 		<!--
 		<footer class="AboutMe__footer">
@@ -49,8 +50,10 @@
 	gap: 5px;
 	.AboutMe__header {
 		img {
-			width: 80px;
-			height: 80px;
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 100%;
 		}
 		display: flex;
 		align-items: center;
@@ -99,10 +102,7 @@
 @media (max-width: 767.98px) {
 	.AboutMe {
 		.AboutMe__header {
-			img {
-				height: 70px;
-				width: 70px;
-			}
+			flex-direction: column;
 			p {
 				font-size: 0.9rem;
 			}

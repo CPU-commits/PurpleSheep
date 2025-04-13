@@ -186,6 +186,7 @@ async function sendMessage() {
 					Es hora de transformar la oveja negra en la oveja
 					<span class="Purple">morada</span>
 				</h3>
+				<h4 class="SubTitle">Portafolio - Felipe Cárdenas</h4>
 			</header>
 			<Grid />
 			<section class="Banner">
@@ -231,9 +232,9 @@ async function sendMessage() {
 					</article>
 					<article class="Banner__main">
 						<h3>
-							Software a la medida, altamente creativo y
-							resolutivo a tus problemas. Convierte una idea, en
-							una idea
+							Construyendo software a la medida, altamente
+							creativo y resolutivo a los problemas. Convierto una
+							idea, en una idea
 							<span class="Purple">morada...</span>
 						</h3>
 					</article>
@@ -257,13 +258,6 @@ async function sendMessage() {
 			<h2 class="Purple">¡Y MUCHOS PROYECTOS M&Aacute;S...!</h2>
 			<Apps />
 		</div>
-
-		<section class="Flag">
-			<span>
-				Desarrollemos juntos tu siguiente proyecto desde el inicio hasta
-				el final
-			</span>
-		</section>
 
 		<section id="contact" class="Form">
 			<HTMLForm :action="sendMessage">
@@ -309,6 +303,10 @@ async function sendMessage() {
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 10px;
+	}
+	.SubTitle {
+		color: white;
+		font-size: 1rem;
 	}
 	.Italic {
 		color: white;
@@ -513,6 +511,10 @@ a {
 				font-size: 0.9rem;
 			}
 		}
+	}
+
+	.First h3 {
+		max-width: 600px;
 	}
 }
 
