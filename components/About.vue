@@ -130,8 +130,8 @@
 	.AboutMe {
 		.AboutMe__header {
 			img {
-				height: 60px;
-				width: 60px;
+				height: 150px;
+				width: 150px;
 			}
 			p {
 				font-size: 0.8rem;
